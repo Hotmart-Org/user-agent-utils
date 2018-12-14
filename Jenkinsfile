@@ -4,7 +4,7 @@ node{
     stage('Download') {
         downloadRepo {
             name = 'user-agent-utils'
-            branch = 'master'
+            branch = 'trunk'
         }
     }
     dir('user-agent-utils'){
