@@ -215,7 +215,11 @@ public enum OperatingSystem {
 
 	UNKNOWN_MOBILE(	Manufacturer.OTHER,null, 3, "Unknown mobile", new String[] {"Mobile"}, null, DeviceType.MOBILE, null ),
 	UNKNOWN_TABLET(	Manufacturer.OTHER,null, 4, "Unknown tablet", new String[] {"Tablet"}, null, DeviceType.TABLET, null ),
-	UNKNOWN(		Manufacturer.OTHER,null, 1, "Unknown", new String[0], null, DeviceType.UNKNOWN, null );
+	UNKNOWN(		Manufacturer.OTHER,null, 1, "Unknown", new String[0], null, DeviceType.UNKNOWN, null ),
+	OPERA(Manufacturer.OPERA,null, 1, "Opera", new String[] { "Opera" }, null, DeviceType.MOBILE, null ),
+	OPERA_9(Manufacturer.OPERA, OperatingSystem.ANDROID , 2, "Opera Mini", new String[] { "Version/12.16" }, null, DeviceType.MOBILE, null ),
+	OPERA_98(Manufacturer.MICROSOFT,OperatingSystem.WINDOWS, 2, "Opera Mini", new String[] { "Version/12.17" }, null, DeviceType.COMPUTER, null ),
+	OPERA_98_1(Manufacturer.MICROSOFT,OperatingSystem.WINDOWS, 2, "Opera Mini", new String[] { "Version/12.17" }, null, DeviceType.COMPUTER, null );
 	
 	private final short id;
 	private final String name;
